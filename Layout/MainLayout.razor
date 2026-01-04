@@ -15,9 +15,10 @@
     </main>
 </div> *@
 
+@* MudBlazor initialization *@
 @inherits LayoutComponentBase
 
-<MudThemeProvider />
+<MudThemeProvider Theme = "_theme" IsDarkMode = "true"/>
 <MudDialogProvider />
 <MudSnackbarProvider />
 
@@ -26,3 +27,17 @@
         @Body
     </MudMainContent>
 </MudLayout>
+
+@* Dark Theme for whole site *@
+@code 
+{
+    private MudTheme _theme = new MudTheme()
+    {
+        PaletteDark = new PaletteDark()
+        {
+            Background = Colors.Shades.Black,
+			Surface = "#121212",
+			TextPrimary = Colors.Shades.White
+        }
+    };
+}
