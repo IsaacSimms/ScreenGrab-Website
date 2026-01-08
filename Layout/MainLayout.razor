@@ -23,6 +23,7 @@
 <MudSnackbarProvider />
 
 <MudLayout>
+    @* top persistent bar *@
     <MudAppBar Elevation="0" Color="Color.Transparent" Style="background-color: #000000;">
         <MudLink Href="/" Underline="Underline.None">
             <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
@@ -34,7 +35,26 @@
             To report bugs or suggest features, please email screengrab.dev@outlook.com
         </MudText>
     </MudAppBar>
+
+    @* main content pt *@
     <MudMainContent Class="pt-16"> 
+
+    @* peristent navigation buttons *@
+        @* To About page button *@
+        <MudButton Variant="Variant.Outlined" Color="Color.Dark" Style="color: #3d3fb8" Href="/about">
+            About
+        </MudButton>
+
+        @* To Download page button *@
+        <MudButton Variant="Variant.Outlined" Color="Color.Dark" Style="color: #3d3fb8" Href="/Download">
+            Download
+        </MudButton>
+
+        @* To Support Screengrab page button *@
+        <MudButton Variant="Variant.Outlined" Color="Color.Dark" Style="color: #4a4dc9">
+            Support ScreenGrab
+        </MudButton>
+
         @Body
     </MudMainContent>
 </MudLayout>
