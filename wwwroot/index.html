@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ScreenGrab-Website</title>
     <base href="/ScreenGrab-Website/" />
+    
+    <!-- GitHub Pages SPA redirect handler -->
+    <script>
+        (function() {
+            var redirect = new URLSearchParams(window.location.search).get('p');
+            if (redirect) {
+                var newPath = window.location.pathname.replace(/\/$/, '') + redirect;
+                window.history.replaceState(null, null, newPath + window.location.hash);
+            }
+        })();
+    </script>
+    
     <link rel="preload" id="webassembly" />
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
