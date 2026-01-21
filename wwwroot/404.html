@@ -9,13 +9,13 @@
         var location = window.location;
         var pathSegments = location.pathname.split('/');
 
-        // redication URL
+        // redirection URL
         var basePath = '/ScreenGrab-Website/';
-        var remaingPath = pathSegments.slice(segmentCount + 1).join('/');
+        var remainingPath = pathSegments.slice(segmentCount + 1).join('/');
 
         location.replace(
             location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') +
-            basePath + '?p=/' + remaingPath +
+            basePath + '?p=/' + remainingPath +
             (location.search ? '&q=' + location.search.slice(1) : '') +
             location.hash
         );
