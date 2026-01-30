@@ -1,17 +1,17 @@
-﻿@page "/about"
+﻿@page "/About"
 
 @* Centered 'For Engineers' Image *@
 <div class="d-flex justify-center mt-8">
-	<MudImage Src="AboutImg.png" Alt="For Engineers" Width="250" />
+	<MudImage Src="images/AboutImg.png" Alt="For Engineers" Width="250" />
 </div>
 
 @* Centered text display *@
 <div class="d-flex justify-center mt-8">
 	<MudText Typo="Typo.h5" Style="color: #3d3fb8; max-width: 1000px; text-align: center;">
 		ScreenGrab is a free and open-source screen capture tool designed for power users, systems engineers, and software developers. <br /> <br />
-		You are encourged to use the tool in both personal and professional environments. Adherence to GNU General Public License v3 is required.<br /> <br />
+		You are encouraged to use the tool in both personal and professional environments. Adherence to GNU General Public License v3 is required.<br /> <br />
 		It is built for the Windows platform and is meant to be a persistent system tray tool. <br /> <br />
-		Screengrab can play a vital role in resolving your screen capture needs. <br /> <br />
+		ScreenGrab can play a vital role in resolving your screen capture needs. <br /> <br />
 		It offers a variety of screen capture options, built-in editing tools, and power user features to improve your workflow. <br /> <br />
 		The tool is developed and maintained by Isaac Simms. <br /> <br />
 		For bug reports, feature requests, or contributions, please visit our GitHub repository or contact us via email at screengrab.dev@outlook.com.
@@ -21,12 +21,33 @@
 @* Repository links with images *@
 <div class="d-flex justify-center gap-8 mt-8 mb-8">
 	<MudLink Href="https://github.com/IsaacSimms/ScreenGrab" Underline="Underline.None" Target="_blank">
-		<MudImage Src="ScreebGrab's RepoHeader.png" Alt="ScreenGrab App Repository" Width="350" />
+		<MudImage Src="images/ScreebGrab's RepoHeader.png" Alt="ScreenGrab App Repository" Width="350" />
 	</MudLink>
 	<MudLink Href="https://github.com/IsaacSimms/ScreenGrab-Website" Underline="Underline.None" Target="_blank">
-		<MudImage Src="Website's Repo.png" Alt="ScreenGrab Website Repository" Width="300" />
+		<MudImage Src="images/Website's Repo.png" Alt="ScreenGrab Website Repository" Width="300" />
 	</MudLink>
 </div>
+
+@* Tips and tricks *@
+<div class="d-flex justify-center mt-8">
+	<div class="d-flex align-center" style="max-width: 1400px;">
+		<div class="flex-grow-1 d-flex justify-center align-center pl-4">
+			<div>
+				<MudText Typo="Typo.h1" Style="color: #3d3fb8; white-space: nowrap;" Class="mb-4" Align="Align.Center">
+					Tips:
+				</MudText>
+				<MudText Typo="Typo.h5" Style="color: #3d3fb8" Align="Align.Center">
+					Change hotkeys and configurations in settings.<br /> <br />
+					Press Esc to close any open form that is in focus.<br /> <br />
+					Use the system tray for easy access.<br /> <br />
+					Build, fix, iterate, and have fun!
+				</MudText>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="mb-16"></div>
 
 @code {
 

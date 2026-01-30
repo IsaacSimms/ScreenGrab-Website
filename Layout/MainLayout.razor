@@ -1,21 +1,4 @@
-﻿@* @inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div> *@
-
-@* MudBlazor initialization *@
+﻿@* MudBlazor initialization *@
 @inherits LayoutComponentBase
 
 <MudThemeProvider Theme = "_theme" IsDarkMode = "true"/>
@@ -27,7 +10,7 @@
     <MudAppBar Elevation="0" Color="Color.Transparent" Style="background-color: #000000;" Fixed="true">
         <MudLink Href="" Underline="Underline.None">
             <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="2">
-                <MudImage Src="ScreenGrabLogo.png" Alt="ScreenGrab Logo" Height="40" />
+                <MudImage Src="images/ScreenGrabLogo.png" Alt="ScreenGrab Logo" Height="40" />
             </MudStack>
         </MudLink>
 		<MudSpacer />
@@ -43,7 +26,7 @@
 
     @* peristent navigation buttons *@
         @* To About page button *@
-        <MudButton Variant="Variant.Outlined" Color="Color.Dark" Style="color: #3d3fb8" Href="about">
+        <MudButton Variant="Variant.Outlined" Color="Color.Dark" Style="color: #3d3fb8" Href="About">
             About
         </MudButton>
 
