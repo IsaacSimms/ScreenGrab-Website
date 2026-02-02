@@ -1,27 +1,27 @@
 ﻿@page "/support"
 
-@*'For Engineers' Image *@
-<div class="d-flex justify-center mt-8">
-	<MudImage Src="images/Support.png" Alt="Support Page Image" Width="300" />
+@* Header Image *@
+<div class="d-flex justify-center mt-8 page-container">
+    <MudImage Src="images/Support.png" Alt="Support Page Image" Class="responsive-img" Style="max-width: 300px; width: 70%;" />
 </div>
 
 @* Centered text display *@
-<div class="d-flex justify-center mt-8">
-	<MudText Typo="Typo.h5" Style="max-width: 1000px; text-align: center;">
-		ScreenGrab has been a blast to build and maintain, but it does cost time and money.  <br /> <br />
-		There are multiple ways that you can support the development of ScreenGrab: <br />
-		- Contribute to the codebase by submitting pull requests on GitHub. <br />
-		- Email screengrab.dev@outlook.com with bug reports, feature suggestions, or improvements. <br />
-		- Spread the word about ScreenGrab to your colleagues and friends. <br />
-		- Donate to support ongoing development and maintenance. <br /> <br />
-	</MudText>
+<div class="d-flex justify-center mt-8 page-container">
+    <MudText Typo="Typo.body1" Class="content-centered">
+        ScreenGrab has been a blast to build and maintain, but it does cost time and money. <br /><br />
+        There are multiple ways that you can support the development of ScreenGrab: <br />
+        - Contribute to the codebase by submitting pull requests on GitHub. <br />
+        - Email screengrab.dev@outlook.com with bug reports, feature suggestions, or improvements. <br />
+        - Spread the word about ScreenGrab to your colleagues and friends. <br />
+        - Donate to support ongoing development and maintenance.
+    </MudText>
 </div>
 
 @* Clickable donation image *@
-<div class="d-flex justify-center mt-8 mb-8">
-	<MudLink Href="https://www.paypal.com/ncp/payment/SKWX5HGW44MAY" Underline="Underline.None" Target="_blank">
-		<MudImage Src="images/Donate.png" Alt="Donate to ScreenGrab" Width="400" />
-	</MudLink>
+<div class="d-flex justify-center mt-8 mb-8 page-container">
+    <MudLink Href="https://www.paypal.com/ncp/payment/SKWX5HGW44MAY" Underline="Underline.None" Target="_blank">
+        <MudImage Src="images/Donate.png" Alt="Donate to ScreenGrab" Class="responsive-img" Style="max-width: 400px; width: 90%;" />
+    </MudLink>
 </div>
 
 @code {

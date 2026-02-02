@@ -1,26 +1,26 @@
 ﻿@page "/download"
 
-@* Centered 'For Engineers' Image *@
-<div class="d-flex justify-center mt-8">
-	<MudImage Src="images/DownloadImg.png" Alt="Download Page Image" Width="350" />
+@* Header Image *@
+<div class="d-flex justify-center mt-8 page-container">
+    <MudImage Src="images/DownloadImg.png" Alt="Download Page Image" Class="responsive-img" Style="max-width: 350px; width: 80%;" />
 </div>
 
 @* Centered text display *@
-<div class="d-flex justify-center mt-8">
-	<MudText Typo="Typo.h5" Style="max-width: 1000px; text-align: center;">
-		ScreenGrab is designed for the Windows operating system.  <br /> <br />
-		At this time there is not a build for macOS or Linux. <br /> <br />
-		Pinning ScreenGrab to your taskbar and enabling it as a startup application is recommended for the best experience. <br /> <br />
-		ScreenGrab is deployed as an MSI to provide a familiar Windows Installer experience. <br /> <br />
-		Download the latest version of ScreenGrab below: <br /> <br />
-	</MudText>
+<div class="d-flex justify-center mt-8 page-container">
+    <MudText Typo="Typo.body1" Class="content-centered">
+        ScreenGrab is designed for the Windows operating system. <br /><br />
+        At this time there is not a build for macOS or Linux. <br /><br />
+        Pinning ScreenGrab to your taskbar and enabling it as a startup application is recommended for the best experience. <br /><br />
+        ScreenGrab is deployed as an MSI to provide a familiar Windows Installer experience. <br /><br />
+        Download the latest version of ScreenGrab below:
+    </MudText>
 </div>
 
 @* Clickable download image *@
-<div class="d-flex justify-center mt-8 mb-8">
-	<MudLink Href="https://github.com/IsaacSimms/ScreenGrab/releases/download/v1.0.0/ScreenGrabInstaller1.0.0.msi" Underline="Underline.None" Target="_blank">
-		<MudImage Src="images/ClickToDownload.png" Alt="Donate to ScreenGrab" Width="450" />
-	</MudLink>
+<div class="d-flex justify-center mt-8 mb-8 page-container">
+    <MudLink Href="https://github.com/IsaacSimms/ScreenGrab/releases/download/v1.0.0/ScreenGrabInstaller1.0.0.msi" Underline="Underline.None" Target="_blank">
+        <MudImage Src="images/ClickToDownload.png" Alt="Download ScreenGrab" Class="responsive-img" Style="max-width: 450px; width: 100%;" />
+    </MudLink>
 </div>
 
 @code {
